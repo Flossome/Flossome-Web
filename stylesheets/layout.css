@@ -5,16 +5,16 @@
 .clear{clear:both;}
 ul {list-style:none;}
 img{ border:none;}
-body{ background:url(../images/common/body_bkg.png) repeat center 0 #F4F4F4; font:normal 12px/14px Arial, Helvetica, sans-serif; color:#666;}
+body{ background:url(../images/common/body_bkg.png) repeat center 0 #F4F4F4; font:normal 12px/14px Arial, Helvetica, sans-serif; color:#666; }
 
 div.background {position:absolute; top:  0; left:0; width:100%; height:660px; z-index:-1;}
-div.background span.left_side {position:absolute; top:0; left:0; width:55%; height:660px; background:url('../images/common/header_bkg_left.jpg') repeat-x 0 bottom;}
-div.background span.right_side {position:absolute; top:0; right:0; width:55%; height:660px; background:url('../images/common/header_bkg_right.jpg') repeat-x 0 bottom;}
+div.background span.frame_top {position:absolute;  left:0; width:100%; height:450px; background: url(../images/common/header_bkg_left.jpg) repeat-x;}
+
+/*div.background span.frame_top {position:absolute; top:0; left:0; width:100%; height:660px;  }*/
 
 div#layout {float:left; width:100%;}
-div#layout div.content {margin:0 auto; width:940px;}
-div#layout div.content span.line {position:absolute; left:0; top:130px; width:100%; height:1px; background:black; opacity:0.1; -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=10)'; filter: alpha(opacity=10);}
-div#layout div.content div.info {float:left; width:940px; margin:0; padding:0 0 40px 0;}
+div#layout div.content {margin:0 auto; width:auto;}
+div#layout div.content div.info {float:left; width:940px; margin:0; padding-left: 200px;}
 
 div#layout div.content div.info div.top_module {float:left; width:940px; background:url(../images/common/top_module.png) no-repeat 0 top;}
 div#layout div.content div.info div.bottom_module {float:left; width:940px; background:url(../images/common/bottom_module.png) no-repeat 0 bottom;}
@@ -39,27 +39,42 @@ div#ie6 p {float:left; padding:10px 0 0 0; margin:0; font:normal 13px Arial; col
 div#ie6 p a {color:#FF3300; text-decoration:none;}
 div#ie6 p a:hover {text-decoration:underline;}
 
-div#announcement{width: 100%; height: 41px; font: normal 13px Arial, Helvetica, sans-serif; color: #FFFFFF; background: url(../images/home/announcement_bck.png) repeat-x}
+/*div#announcement{width: 100%; height: 41px; font: normal 13px Arial, Helvetica, sans-serif; color: #FFFFFF; background: url(../images/home/announcement_bck.png) repeat-x}
 div#announcement div#ann_content {margin: 0 auto; width: 820px; height: 70px; padding: 12px 0 0 0; background: url(../images/home/announcement_bck_tick.png) no-repeat;}
 div#announcement a {color: #FFFFFF;}
-div#announcement a#close_announcement {display: inline-block; float: right; width: 9px; height: 9px; margin-top: 5px; background: url(../images/home/close_icon.png) no-repeat; text-indent: -10000px;}
+div#announcement a#close_announcement {display: inline-block; float: right; width: 9px; height: 9px; margin-top: 5px; background: url(../images/home/close_icon.png) no-repeat; text-indent: -10000px;}*/
 
-div#header {float:left; width:820px; padding:0 60px 0;}
-div#header a.logo {float:left; padding:20px 0 0 0;}
-div#header ul {float:right; width:auto; list-style:none; padding:50px 0 15px; height:auto;}
-div#header ul li {float:left; width:auto; background:url(../images/common/header_menu_list_separator.png) no-repeat right -2px; padding:0 12px 5px 6px; height:auto;}
-div#header ul li a {float:left; width:auto; font:normal 13px/16px Arial, Helvetica, sans-serif; color:#333333; text-decoration:none; text-shadow:none;}
-div#header ul li a:hover { color:white; text-decoration:underline;}
-div#header ul li a.current { color:#fff; cursor:default; text-decoration:underline;}
+div#header {float:left;}
+div#header a.logo {position:absolute;margin-left:120px; margin-top:20px;}
+
+div#header ul {float:right;list-style:none; margin-top:55px; height:auto; width:auto; margin-right:150px;}
+div#header ul li {float:left; padding:0 12px 5px 20px; }
+div#header ul li a {
+	float:left;
+	font: 16px Arial, Helvetica, sans-serif;
+	color:#FFFFFF; 
+	text-decoration:none; 
+	text-shadow:none;
+	border-style:solid;
+	border-color:transparent;
+	-moz-border-radius: 25px 10px / 10px 25px;
+	border-radius: 25px 10px / 10px 25px;
+	padding:5px;
+}
+
+div#header ul li a:hover { border-color:#667F27; background: #667F27;}
+					  
+div#header ul li a.current { cursor:default;border-color:#667F27; background: #667F27;}
 div#header ul li.last{ background:none; padding-right:0}
-div#header h1{float:left; width:820px; font:bold 53px Arial, Helvetica, sans-serif; color:#fff; padding:50px 0 15px 0; letter-spacing:-3px; word-spacing:1px; text-shadow: #44631E 0 -1px; line-height:53px; margin:0;}
 
-div#header h1.home_title {font:bold 63px Arial, Helvetica, sans-serif; line-height: 67px}
+div#header h1{float:left; width:820px; font:bold 53px Arial, Helvetica, sans-serif; color:#fff; padding:20px 0 15px 0; letter-spacing:-3px; word-spacing:1px; text-shadow: #44631E 0 -1px; line-height:53px; margin:0;}
+
+div#header h1.home_title {font:bold 63px Arial, Helvetica, sans-serif; line-height: 67px;padding:50px 300px 0;}
 
 
 div#header h2 {float:left; width:520px; height:auto; font:normal 19px Arial, Helvetica, sans-serif; color:#fff; text-shadow: #44631E 0 -1px; letter-spacing:-1px; word-spacing:3px; padding:10px 0 20px 0; margin:0;}
 div#header h3 {float:left; width:620px; font:normal 23px Arial, Helvetica, sans-serif; color:#fff; text-shadow: #44631E 0 -1px; letter-spacing:-1px; word-spacing:0px; padding:0 0 23px;}
-div#header h3.long {width:100%;}
+div#header h3.long {width:100%;padding:10px 300px 0;}
 div#header h3.short {padding:10px 0 0 0; width:500px;}
 div#header div.addon {float:right; margin:0;}
 div#header a.based {float:left; width:215px; height:144px; padding:19px 19px 0 19px; margin:0; background:url(../images/about_us/based_bkg.png) no-repeat 0 0; text-decoration:none;}
@@ -443,29 +458,30 @@ div.team div.left div.mendeley a {font:normal 13px Arial; color:#999999;}
 
 
 /*FOOTER*/
-div#footer {float:left; position:relative; width:100%; height:343px; padding:0; margin:0;background:url(../images/common/footbackground.jpg) no-repeat;}
+div#footer {float:left; position:relative; width:100%; height:200px; padding:0; margin:0;background:url(../images/common/footbackground.jpg) no-repeat;}
 div#footer div.outer_footer {position:absolute; top:0; left:0; right:0; bottom:0; width:100%; height:100%; z-index:100;}
-div#footer div.outer_footer div.inner_footer {margin:0 auto; width:870px; position:relative; z-index:10000;}
-div#footer div.outer_footer div.inner_footer div.menu {position:relative; float:left; margin:70px 0 0 0;}
+div#footer div.outer_footer div.inner_footer {margin:0 auto; width:920px; position:relative;}
+
+/*footer menu*/
+div#footer div.outer_footer div.inner_footer div.menu {position:relative; float:left; margin:40px 0 0 0;}
 div#footer div.outer_footer div.inner_footer div.menu ul {float:left; width:auto; margin:0 0 0 23px; padding:0; list-style:none;}
-div#footer div.outer_footer div.inner_footer div.menu ul li {float:left; width:auto; padding:0 13px 0 0; margin:0 8px 0 0; background:url(../images/common/list_separator.png) no-repeat right -2px;}
+div#footer div.outer_footer div.inner_footer div.menu ul li {float:left; width:auto; padding:0 13px 0 0; margin:0 8px 0 0; /*background:url(../images/common/list_separator.png) no-repeat right -2px;*/}
 div#footer div.outer_footer div.inner_footer div.menu ul li.last {background:none;}
 div#footer div.outer_footer div.inner_footer div.menu ul li a {font:normal 13px Arial; color:#A5A5A5; text-decoration:none;}
 div#footer div.outer_footer div.inner_footer div.menu ul li a:hover {text-decoration:underline;}
 div#footer div.outer_footer div.inner_footer div.menu ul li a.current {text-decoration:underline; cursor:default;}
 
-div#footer div.outer_footer div.inner_footer div.info {float:right; padding:40px 0 0 0; width:284px;}
-div#footer div.outer_footer div.inner_footer div.info a.logo {float:left; width:175px; height:68px; background:url(../images/common/flossomegraylogo_small.png) no-repeat 0 0;}
-div#footer div.outer_footer div.inner_footer div.offices {display:inline-block; width:100%; margin:25px 0 0 0;}
+/*footer logo*/
+div#footer div.outer_footer div.inner_footer div.info {float:right; margin:20px 0 0 0; width:300px;}
+div#footer div.outer_footer div.inner_footer div.info a.logo {float:left;width:175px; height:68px; background:url(../images/common/flossomegraylogo_small.png) no-repeat 0 0;}
+/*div#footer div.outer_footer div.inner_footer div.offices {display:inline-block; width:100%; margin:25px 0 0 0;}
 div#footer div.outer_footer div.inner_footer div.offices div {display:inline-block; width:136px; *display: inline; zoom:1; vertical-align:top;}
 div#footer div.outer_footer div.inner_footer div.offices div.right {margin:0 0 0 10px}
 div#footer div.outer_footer div.inner_footer div.offices div h3 {padding:0 0 5px 0; font:normal 11px Arial; color:#cccccc;}
 div#footer div.outer_footer div.inner_footer div.offices div h3 a {color:#CCCCCC}
-div#footer div.outer_footer div.inner_footer div.offices div h3 a:hover {color:white}
+div#footer div.outer_footer div.inner_footer div.offices div h3 a:hover {color:white}*/
 div#footer div.outer_footer div.inner_footer p {float:right; padding:0; width:100%; color:#888888; font:normal 13px Arial; line-height:15px}
 div#footer div.outer_footer div.inner_footer p a {color:#F30; text-decoration:none; font-weight:normal}
 div#footer div.outer_footer div.inner_footer p a:hover{ text-decoration:underline}
-div#footer div.outer_footer div.inner_footer p.top {padding:10px 0 0 0;}
-div#footer div.outer_footer div.inner_footer p.top2 {padding:20px 0 0 0;}
-div#footer div.outer_footer div.inner_footer p.top3 {padding:15px 0 0 0;}
+div#footer div.outer_footer div.inner_footer p.top2 {padding-top:10px;}
 
