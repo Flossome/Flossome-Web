@@ -1,0 +1,78 @@
+html,body,div,span,applet,object,iframe,h2,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;outline:0;padding:0;vertical-align:baseline}
+:focus{outline:0}
+body{background:#fff;line-height:1}
+input{-webkit-appearance:none}
+ol,ul{list-style:none}
+table{border-collapse:separate;border-spacing:0}
+caption,th,td{font-weight:normal;text-align:left}
+blockquote:before,blockquote:after,q:before,q:after{content:""}
+blockquote,q{quotes:"" ""}
+a img{border:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+.clean:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+body{background:#f0f0f0 url('../images/background-gray.png');font-family:'Open sans',cursive;color:#555;font-size:62.5%;margin:0 0 20px 0}
+header{height:85px;position:relative;}
+#accessibility{font-size:1.4em;visibility:hidden;height:0;width:0}
+#logo{position:absolute;top:22px}
+#logo img{border:0}
+#menu{position:absolute;top:60px;left:500px}
+#menu li{display:inline;padding:0 10px 0 10px;font-size:1.4em}
+#menu li.selected a{color:#161616}
+#menu li a{text-decoration:none;color:#888}
+#menu li a:hover{color:#161616}
+#language{position:absolute;top:20px;right:0;width:50px;cursor:pointer}
+#language #choose{display:none;position:absolute;right:-1px;top:15px;width:160px;z-index:1}
+#language #choose a{text-decoration:none}
+#language #choose .selected{background-color:#fff;padding:0 3px 0 0}
+.wrap{margin:0 auto;width:1000px}
+footer{width:800px;margin-left:auto;margin-right:auto;padding:20px 0 0 0;position:relative}
+footer div{float:left}
+footer .innove{width:350px;font-size:1.1em; margin-top:10px;}
+footer .contact{float:right; margin-top:10px;}
+footer .copy{display:block;margin:0 0 5px 0}
+footer .copy a{color:#555;text-decoration:none}
+footer .privacy{display:block;margin:0 0 5px 0}
+footer .privacy a{color:#555}
+footer .social{position:relative;left:-7px;display:block;margin:10px 0 0 0}
+footer .likebox{position:relative;left:-11px}
+footer .social .facebook{display:inline-block;background:url('../images/icon-fb.png') no-repeat;width:35px;height:33px}
+footer .social .twitter{display:inline-block;background:url('../images/icon-twitter-gray.png') no-repeat;width:35px;height:33px}
+footer .social .issuu{display:inline-block;background:url('../images/icon-issuu.png') no-repeat;width:35px;height:33px}
+footer .social .linkedin{display:inline-block;background:url('../images/icon-linkedin.png') no-repeat;width:35px;height:33px}
+footer .social .youtube{display:inline-block;background:url('../images/icon-youtube.png') no-repeat;width:35px;height:33px}
+footer .address{background:url('../images/icon-map.png') no-repeat;padding:0 0 0 40px;position:relative;display:block;font-size:1.1em;line-height:1.4em;height:33px}
+footer .tel{position:relative;background:url('../images/icon-round-clouds.png') no-repeat;padding:0 0 0 40px;display:block;font-size:1.2em;margin:10px 0 0 0}
+footer .tel a{text-decoration:none;color:#555}
+footer .tel span{display:inline-block;background-color:#9ccc5a;margin:3px 0 0 0;padding:2px 5px;-moz-border-radius:4px;border-radius:4px}
+footer .digital{position:relative;background:url('../images/icon-info.png') no-repeat;margin:10px 0 0 0;padding:0 0 0 40px;display:block;font-size:1.1em;line-height:1.4em}
+footer .digital a{text-decoration:none;color:#555}
+footer .newsletter{position:absolute;right:0;background:url('../images/icon-square-clouds.png') no-repeat;padding:0 0 0 40px}
+footer .newsletter .text{display:block;font-size:1.1em}
+footer .newsletter .form{display:block;text-align:right;margin:8px 0 0 0}
+.newsletterEmail{height:26px;width:200px;margin:0 5px 0 0;border:1px solid #ddd;font-size:1.1em;color:#555;padding:0 3px 0 3px;-moz-border-radius:3px;border-radius:3px}
+.footerSeparator{display:block;margin:10px 0 0 0;height:1px;background-color:#c8c8c8;border-bottom:1px solid #fff}
+.newsletterButton{height:28px;border:0;display:inline-block;padding:0 10px 0 10px;background-color:#9ccc5a;vertical-align:top;-moz-border-radius:3px;border-radius:3px;color:#555}
+#newsletterButton:hover{background-color:#ccc}
+::selection{background:#9ccc5a}
+::-moz-selection{background:#9ccc5a}
+
+/* vizzuality */
+div#subhome h1{float:left; width:820px; font:bold 53px Arial, Helvetica, sans-serif; color:#fff; padding:20px 0 15px 0; letter-spacing:-3px; word-spacing:1px; text-shadow: #44631E 0 -2px; line-height:53px; margin:0;}
+div#subhome h1.home_title {font:bold 63px Arial, Helvetica, sans-serif; line-height: 67px;padding:50px 100px 0;}
+div#subhome h3 {float:left; width:auto; font:normal 23px Arial, Helvetica, sans-serif; color:#fff; text-shadow: #44631E 0 -1px; letter-spacing:-1px; word-spacing:0px; padding:0 0 23px;}
+div#subhome h3.long {padding:0px 250px 0;}
+span.line {position: absolute; left: 0; top: 130px; width: 100%; height: 1px; background: black; opacity: 0.1;-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=10)'; filter: alpha(opacity=10);}
+footer .line {position: absolute; left: 0; width: 100%; height: 1px; background: black; opacity: 0.1;-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=10)'; filter: alpha(opacity=10); margin:-10px;}
+
+
+/*flossome*/
+#back{margin:30px 0 0 0;background:#bed36a url('../images/backgreen.png') repeat center 0; ;padding:20px 0 20px 0; font:normal 12px/14px Arial, Helvetica, sans-serif;color:#666;}
+div.info {width: 940px;margin-left: auto;margin-right:auto;padding: 0 0 40px 0;}
+div.info div.top_module {float: left;width: 940px;background: url(../images/top_module.png) no-repeat 0 top;}
+div.info div.bottom_module {float: left;width: 940px;background: url(../images/bottom_module.png) no-repeat 0 bottom;}
+div.info div.module {float:left; width:903px; padding:25px 18px 25px 19px;}
+div.info div.module h3 {float: left;width: 100%;font: bold 15px Arial;color: #262621;}
+div.info div.inner_module {float:left; width:823px; background:white; margin:0; padding:35px 40px;}
+footer a {color:#db2f05; text-decoration:none;}
+
+
